@@ -1,21 +1,42 @@
-MIT License
+BiosSystem Software License & Anti-AI Protection Agreement
+Copyright (c) 2026 BiosSystem. All rights reserved.
 
-Copyright (c) 2026 BiosSystem
+Permission is hereby granted to any person obtaining a copy of the pre-compiled
+binary release of this software ("ApexShock") to install, run, and execute the
+software solely for personal, non-commercial entertainment and testing purposes,
+subject to the following conditions:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. PROPRIETARY OWNERSHIP
+The software, its architecture, game mechanics, character designs, shaders,
+audio, and documentation are proprietary trade secrets and copyrighted works of
+BiosSystem. All rights not expressly granted herein are reserved.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+2. PROHIBITION ON REVERSE ENGINEERING & DECOMPILATION
+You may not, and you agree not to, decompile, disassemble, reverse engineer,
+decrypt, unpack (.pck extraction), de-tokenize (.gdc bytecode disassembly),
+inspect memory dumps, extract shaders, or attempt to derive the human-readable
+source code or underlying algorithms of the software or any portion thereof,
+except and only to the extent that such activity cannot be prohibited by
+applicable mandatory law.
 
+3. STRICT PROHIBITION ON AI/ML TRAINING & AUTOMATED INGESTION
+Under no circumstances may the software, its binary packages, metadata,
+documentation, network protocols, schemas, screenshots, or art assets be:
+  (a) Crawled, scraped, harvested, or ingested by automated web agents;
+  (b) Tokenized, parsed, or embedded as training, fine-tuning, or evaluation
+      data for any artificial intelligence, machine learning model, large
+      language model (LLM), deep neural network, or automated code synthesis tool;
+  (c) Used to create, instruct, validate, or benchmark generative AI systems.
+
+4. TEXT AND DATA MINING (TDM) RESERVATION
+Pursuant to Article 4(3) of Directive (EU) 2019/790 and similar laws globally,
+BiosSystem expressly reserves all rights regarding text and data mining.
+
+5. DISCLAIMER OF WARRANTIES
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.

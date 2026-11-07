@@ -1,0 +1,9 @@
+# Machine-Readable Anti-AI Training Declaration
+# ApexShock - BiosSystem
+# Text and Data Mining (TDM) Reservation under Directive (EU) 2019/790 Article 4
+
+User-agent: *
+Disallow: /
+
+tdm-reservation: 1
+tdm-policy: https://github.com/BiosSystem/ApexShock/blob/main/SECURITY.md
