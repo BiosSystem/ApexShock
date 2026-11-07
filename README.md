@@ -33,11 +33,27 @@ ApexShock is a fast-paced top-down hero arena brawler designed natively for mobi
 The project is built on Godot 4.3 using the Vulkan Mobile rendering pipeline, custom zero-allocation memory pools (`ObjectPool`), and safe-area margin containers (`SafeAreaContainer`) to support notched displays and hardware camera cutouts.
 
 <div align="center">
-  <img src="assets/mockups/gameplay_mockup.jpg" alt="ApexShock Mobile Gameplay" width="85%" />
-  <p><em>In-game combat preview showing dual touch joysticks, Overdrive meter, and objective telemetry.</em></p>
+  <img src="assets/screenshots/in_game_vulkan_hdr.png" alt="ApexShock Vulkan Mobile In-Game Combat" width="92%" />
+  <p><em>In-engine Vulkan Mobile combat capture (v0.3.1) featuring 2D HDR WorldEnvironment bloom, dynamic point lighting, textured isometric barriers, and cel-shaded hero combatants.</em></p>
+</div>
+
+<div align="center">
+  <img src="assets/screenshots/armory_hub_vulkan.png" alt="ApexShock Vanguard Armory Hub" width="92%" />
+  <p><em>Interactive Vanguard Armory Hub featuring 3D hero showcase pedestal, dynamic overhead stage lighting, stat telemetry, and 4-tier skill loadout configuration.</em></p>
 </div>
 
 ---
+
+## Visual Fidelity & Engine Pipeline
+
+ApexShock combines stylized comic readability with a modern Vulkan Mobile 2.5D rendering pipeline:
+
+- **2D HDR Viewport & WorldEnvironment**: Wide color gamut post-processing pipeline (`rendering/viewport/hdr_2d=true`) delivering radiant bloom coronas, energy laser arcs, and ACES filmic tonemapping with 1.20 saturation and 1.12 contrast enhancement.
+- **Real-Time Dynamic Point Lighting**: 2D normal-mapped point lights illuminate the central crystal mine pit and team Aegis Reactor Cores with synchronized energy pulses.
+- **Textured 3D Isometric Barriers**: CC0 textured isometric metallic structures (`assets/props/metalStructure_NE.png`) with ambient occlusion drop shadows, gunmetal foundation chassis, and damage-reactive warning conduit strips.
+- **Cel-Shaded Comic Silhouette Outlines**: Multi-pass silhouette shading on character models ensuring instantaneous visual readability and contrast against vibrant arena floors.
+- **Faceted 3D Pickups & Interactive Crates**: 2.5D faceted isometric crystal pickups with hover bobbing and ground drop shadows; alloy Power Cube crates with glowing emerald energy cores.
+- **Volumetric VFX & Lens Flares**: Billowing smoke particles, star lens flare bursts on muzzle fire, and radiant particle emissions for primary attacks, supers, and gadgets.
 
 ## Combat Mechanics
 
