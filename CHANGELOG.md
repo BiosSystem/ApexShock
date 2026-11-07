@@ -7,6 +7,13 @@ The format is based on Keep a Changelog, and this project adheres to Semantic Ve
 ## [v0.4.0-alpha] - 2026-11-07
 
 ### Added
+- True 3D Cel-Shaded Character and Shader Pipeline (Phase 2):
+  - Built Mobile Vulkan quantized cel-shading shader (`assets/shaders/toon_character.gdshader`) with two-band diffuse step, comic rim lighting, glint specular, and sci-fi neon emission masks.
+  - Implemented inverted hull vertex extrusion outline shader (`assets/shaders/inverted_hull_outline.gdshader`) providing sharp black manga silhouette borders without post-processing depth passes.
+  - Two-pass material resource (`assets/shaders/toon_character_material.tres`) combining base cel shader with next-pass hull outline extrusion.
+  - Built procedural 3D Vanguard hero rig (`scenes/characters/brawler_model_3d.gd` & `brawler_model_3d.tscn`) orchestrating 360-degree locomotion tilt, walk bobbing, weapon recoil, and team armor color modulation.
+  - Created interactive 3D inspection scene `scenes/characters/character_viewer.tscn` with orbiting camera, holographic platform, and automated screenshot capture hook (`poc_3d_toon_model.png`).
+  - Added dedicated shader and procedural 3D rig unit test suite (`tests/unit/test_shaders.gd`) and integrated 3 new network dispatch lifecycle tests (`tests/unit/test_network.gd`), raising test suite to 36 passing checks.
 - Authoritative Multiplayer Architecture and Binary Network Layer (Phase 1):
   - Compact binary serialization engine (`NetworkPacket`: `ClientInputFrame`, `BrawlerStateSnapshot`, `WorldStateSnapshot`) minimizing mobile cellular bandwidth.
   - ENet UDP multiplayer network controller (`src/network/network_manager.gd`) handling dedicated server hosting, client connection handshakes, and round-trip ping telemetry.
