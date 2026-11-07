@@ -42,6 +42,11 @@ The project is built on Godot 4.3 using the Vulkan Mobile rendering pipeline, cu
   <p><em>Interactive Vanguard Armory Hub featuring 3D hero showcase pedestal, dynamic overhead stage lighting, stat telemetry, and 4-tier skill loadout configuration.</em></p>
 </div>
 
+<div align="center">
+  <img src="assets/screenshots/victory_screen_vulkan.png" alt="ApexShock Match Victory Splash" width="92%" />
+  <p><em>Match Victory & Star Player MVP splash modal featuring post-game trophy progression, currency rewards, and objective telemetry.</em></p>
+</div>
+
 ---
 
 ## Visual Fidelity & Engine Pipeline

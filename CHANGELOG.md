@@ -29,6 +29,9 @@ The format is based on Keep a Changelog, and this project adheres to Semantic Ve
 - Volumetric Showdown Storm and Combat Floating Text:
   - Added 36 volumetric billowing smoke particles around the contracting toxic fog perimeter (`scenes/modes/showdown_mode.gd`) with dynamic hazard tinting.
   - Upgraded floating damage popups (`src/combat/floating_damage_label.gd`) with 4-pass comic black outline shadows and star lens flares on critical hits.
+- End-of-Match Victory Splash and Sprint Locomotion Juice:
+  - Added full-screen Victory and Defeat end-of-match modal splash (`src/ui/match_hud.gd`) featuring frosted glass backdrop, Star Player MVP banner, 3-tier reward progression cards (+8 Trophies, +60 Credits, +140 Mastery XP), and replay controls.
+  - Added dynamic athletic sprint tilt and low-health pulsating danger warning halos (`src/combat/brawler.gd`) when hero vitality drops below 30%.
 
 ## [v0.3.0] - 2026-10-24
 
