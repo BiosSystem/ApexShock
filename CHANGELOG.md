@@ -4,6 +4,15 @@ All notable changes to ApexShock are documented in this file.
 
 The format is based on Keep a Changelog, and this project adheres to Semantic Versioning.
 
+## [v0.4.0-alpha] - 2026-11-07
+
+### Added
+- Authoritative Multiplayer Architecture and Binary Network Layer (Phase 1):
+  - Compact binary serialization engine (`NetworkPacket`: `ClientInputFrame`, `BrawlerStateSnapshot`, `WorldStateSnapshot`) minimizing mobile cellular bandwidth.
+  - ENet UDP multiplayer network controller (`src/network/network_manager.gd`) handling dedicated server hosting, client connection handshakes, and round-trip ping telemetry.
+  - Client-side input prediction and server reconciliation buffer (`src/network/prediction_reconciliation.gd`) with 128-frame history ring buffer, deterministic rollbacks, and smooth exponential visual error decay.
+  - Expanded automated test suite with 4 new networking unit tests (`tests/unit/test_network.gd`) bringing total test count to 31 passing checks.
+
 ## [v0.3.1] - 2026-11-07
 
 ### Added
