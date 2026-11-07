@@ -11,6 +11,9 @@ The format is based on Keep a Changelog, and this project adheres to Semantic Ve
   - Compact binary serialization engine (`NetworkPacket`: `ClientInputFrame`, `BrawlerStateSnapshot`, `WorldStateSnapshot`) minimizing mobile cellular bandwidth.
   - ENet UDP multiplayer network controller (`src/network/network_manager.gd`) handling dedicated server hosting, client connection handshakes, and round-trip ping telemetry.
   - Client-side input prediction and server reconciliation buffer (`src/network/prediction_reconciliation.gd`) with 128-frame history ring buffer, deterministic rollbacks, and smooth exponential visual error decay.
+  - Authoritative Headless Dedicated Server Orchestrator (`src/network/server_arena_controller.gd`) managing 30Hz simulation steps, dynamic peer-to-brawler slot mapping, input ingestion, and ordered snapshot broadcasts.
+  - Client Network Arena Controller (`src/network/client_arena_controller.gd`) sampling touch joystick inputs, streaming binary frames, applying local prediction, and interpolating remote brawlers.
+  - Dedicated server CLI launch flag (`--server` / `--dedicated-server`) and client connect flag (`--connect <ip>`).
   - Expanded automated test suite with 4 new networking unit tests (`tests/unit/test_network.gd`) bringing total test count to 31 passing checks.
 
 ## [v0.3.1] - 2026-11-07
