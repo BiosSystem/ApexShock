@@ -1,0 +1,32 @@
+name: Public Showcase CI
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+permissions:
+  contents: read
+
+jobs:
+  validate-assets-and-links:
+    name: Validate Links & Documentation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Verify Asset Integrity
+        run: |
+          test -f README.md
+          test -f assets/branding/banner.jpg
+          test -f assets/mockups/gameplay_mockup.jpg
+          test -f assets/branding/roster_poster.jpg
+          echo "All promotional assets verified."
+
+      - name: Validate Markdown Structure
+        run: |
+          test -f docs/SIDELOAD_GUIDE.md
+          test -f docs/HERO_ROSTER.md
+          echo "All documentation files present."
