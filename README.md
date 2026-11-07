@@ -9,16 +9,16 @@ Top-down 3v3 sci-fi mobile hero arena brawler built for Android.
 [![Engine](https://img.shields.io/badge/Engine-Godot_4.3-478CBF?style=flat-square&logo=godotengine&logoColor=white)](https://godotengine.org)
 [![Platform](https://img.shields.io/badge/Platform-Android_ARM64-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/BiosSystem/ApexShock/releases/latest)
 [![Graphics](https://img.shields.io/badge/Renderer-Vulkan_Mobile-E10098?style=flat-square)](https://github.com/BiosSystem/ApexShock)
-[![Latest Release](https://img.shields.io/badge/Release-v0.3.0_APK-brightgreen?style=flat-square&logo=github)](https://github.com/BiosSystem/ApexShock/releases/tag/v0.3.0)
+[![Latest Release](https://img.shields.io/badge/Release-v0.3.1_APK-brightgreen?style=flat-square&logo=github)](https://github.com/BiosSystem/ApexShock/releases/tag/v0.3.1)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 
 <br/>
 
 | Package | Platform | Target Architecture | Download Link |
 |---|---|---|---|
-| **Android APK** | Android 8.0+ | ARM64-v8a | [ApexShock-v0.3.0.apk](https://github.com/BiosSystem/ApexShock/releases/download/v0.3.0/ApexShock-v0.3.0.apk) (28.56 MB) |
-| **Desktop Playtest** | Windows 10/11 x64 | x86_64 | [ApexShock-v0.3.0-Bundle.zip](https://github.com/BiosSystem/ApexShock/releases/download/v0.3.0/ApexShock-v0.3.0-Bundle.zip) (32.49 MB) |
-| **Bytecode Pack** | Cross-platform Godot 4.3 | Any | [ApexShock-v0.3.0.pck](https://github.com/BiosSystem/ApexShock/releases/download/v0.3.0/ApexShock-v0.3.0.pck) (4.27 MB) |
+| **Android APK** | Android 8.0+ | ARM64-v8a | [ApexShock-v0.3.1.apk](https://github.com/BiosSystem/ApexShock/releases/download/v0.3.1/ApexShock-v0.3.1.apk) (27.80 MB) |
+| **Desktop Playtest** | Windows 10/11 x64 | x86_64 | [ApexShock-v0.3.1-Bundle.zip](https://github.com/BiosSystem/ApexShock/releases/download/v0.3.1/ApexShock-v0.3.1-Bundle.zip) (59.42 MB) |
+| **Bytecode Pack** | Cross-platform Godot 4.3 | Any | [ApexShock-v0.3.1.pck](https://github.com/BiosSystem/ApexShock/releases/download/v0.3.1/ApexShock-v0.3.1.pck) (4.63 MB) |
 
 [Installation Guide](docs/SIDELOAD_GUIDE.md) | [Hero Roster & Ability Specs](docs/HERO_ROSTER.md) | [Report an Issue](https://github.com/BiosSystem/ApexShock/issues)
 
@@ -97,7 +97,7 @@ Detailed damage formulas, passive descriptions, and balance tables are documente
 ## Installation & Sideloading
 
 ### Direct Android Sideloading (Phones & Tablets)
-1. Download [ApexShock-v0.3.0.apk](https://github.com/BiosSystem/ApexShock/releases/download/v0.3.0/ApexShock-v0.3.0.apk) to your Android device.
+1. Download [ApexShock-v0.3.1.apk](https://github.com/BiosSystem/ApexShock/releases/download/v0.3.1/ApexShock-v0.3.1.apk) to your Android device.
 2. Tap the APK file and select **Install**. If prompted, grant permission to install from your browser or file manager.
 3. Launch **ApexShock** from your applications menu.
 
@@ -105,14 +105,14 @@ Detailed damage formulas, passive descriptions, and balance tables are documente
 With your Android device connected via USB with USB Debugging enabled:
 
 ```bash
-adb install -r ApexShock-v0.3.0.apk
+adb install -r ApexShock-v0.3.1.apk
 ```
 
 ### Desktop Playtest (Windows x64)
-1. Download and extract [ApexShock-v0.3.0-Bundle.zip](https://github.com/BiosSystem/ApexShock/releases/download/v0.3.0/ApexShock-v0.3.0-Bundle.zip).
+1. Download and extract [ApexShock-v0.3.1-Bundle.zip](https://github.com/BiosSystem/ApexShock/releases/download/v0.3.1/ApexShock-v0.3.1-Bundle.zip).
 2. Execute with any Godot 4.3 binary:
    ```bash
-   godot --main-pack ApexShock-v0.3.0.pck
+   godot --main-pack ApexShock-v0.3.1.pck
    ```
 
 Desktop controls: Move with `W`/`A`/`S`/`D`, aim and shoot with Mouse Left-Click, Gadget on `[G]`, Overdrive on `[H]`, Menu on `[TAB]`. Full controller support via standard XInput/DirectInput gamepads.
@@ -138,9 +138,9 @@ Release binaries are compiled with stripped GDScript bytecode (`.gdc`):
 
 | Artifact | Size | SHA-256 Checksum |
 |---|---|---|
-| `ApexShock-v0.3.0.apk` | 28.56 MB | `c61fce1f8c43ce5e53a9b8bb6227ac9488c3fc479cb91279c3a8f5c1c750f229` |
-| `ApexShock-v0.3.0.pck` | 4.27 MB | `6481ca00bfa0af3f0d9f20f721c8c664c386cbe8eec144affa9dcff08c157e35` |
-| `ApexShock-v0.3.0-Bundle.zip` | 32.49 MB | `6e0cd21506330c35804847e6ee5e206ea2c8e1f03d7e1f8b19ebec950359bc2b` |
+| `ApexShock-v0.3.1.apk` | 27.80 MB | `10c31a361123e3a8ca8845f0710d295e94c481d704579b60af52c7796bbac996` |
+| `ApexShock-v0.3.1.pck` | 4.63 MB | `2679da8c090978453dbd0df26cda348cbb258fd901a7443ce45d81a564d5c34b` |
+| `ApexShock-v0.3.1-Bundle.zip` | 59.42 MB | `bded10e4ee489057bbafcca5363fbe93129db82621fcc77e17f245e870647d85` |
 
 ---
 
